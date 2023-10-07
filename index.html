@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
+
+    <title>Random Password Generator</title>
+</head>
+<body>
+    <main class="container">
+
+        <!-- heading -->
+        
+        <h2 class="heading">
+            Password Generator
+        </h2>
+
+        <div class="output_box">
+            <input type="text" placeholder="Your Password Display here" id="password_opt" disabled>
+                <img src="imgs/copy.png" >
+        </div>
+        <input type="range" min="1" max="14" id="password_range">
+
+        <!-- flex_box_password_length -->
+        <div class="flex_box">
+            <p>
+                Password Length
+            </p>
+            <span id="password_num">
+                14
+            </span>
+        </div>
+
+        <!-- UpperCase -->
+
+        <div class="flex_box">
+            <label for="UpperCase">
+                Include Lowercase Letters(a-z)
+            </label>
+            <input type="checkbox" id="UpperCase">
+        </div>
+
+        <!-- LowerCase -->
+
+        <div class="flex_box">
+            <label for="LowerCase">
+                Include Uppercase Letters(A-Z)
+            </label>
+            <input type="checkbox" id="LowerCase">
+        </div>
+
+        <!-- Digits -->
+
+        <div class="flex_box">
+            <label for="Digits">
+                Include Numbers (0-9)
+            </label>
+            <input type="checkbox" id="Digits">
+        </div>
+
+        <!-- Special -->
+
+        <div class="flex_box">
+            <label for="Special">
+                Include Special Characters(!-*)
+            </label>
+            <input type="checkbox" id="Special">
+        </div>
+
+        <!-- Generate_btn -->
+
+        <button type="button" id="Generate_btn">
+            Generate Password
+        </button>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
